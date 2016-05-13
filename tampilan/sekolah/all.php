@@ -27,34 +27,34 @@ value="<?php echo (get("q"));?>">
 <table class="data">
 <thead>
 <tr>
-<th>No</th>
-<th>Nama</th>
-<th>Alamat</th>
-<th>Logo</th>
-<th colspan="4">Action</th>
+	<th>No</th>
+	<th>Nama</th>
+	<th>Alamat</th>
+	<th>Logo</th>
+	<th colspan="4">Action</th>
 </tr>
 </thead>
 <tbody>
 <?php
 $i = 1;
+//echo "<pre>".print_r($data,1)."</pre>";
 foreach ($data as $key) {
 ?>
 <tr>
-<td><?php echo $i;?></td>
-<td><?php echo $key['nama'];?></td>
-<td><?php echo $key['alamat'];?></td>
-<td><img class="img-mini" src="assets/foto/
-<?php echo $key['logo'];?>"></td>
-<td><a target="_blank" href="proses/sekolah/pdf.php?id=
-<?php echo $key['id'];?>">PDF</a></td>
-<td><a href="proses/sekolah/download.php?id=
-<?php echo $key['id'];?>">Download</a></td>
-<td><a href="index.php?p=sekolah&m=edit&id=
-<?php echo $key['id'];?>">Ubah</a></td>
-<td><a onclick="return confirm('Hapus Data
-<?php echo $key['nama'];?>')"
-href="proses/sekolah/hapus.php?id=
-<?php echo $key['id'];?>">Hapus</a></td>
+	<td><?php echo $i;?></td>
+	<td><?php echo $key['nama'];?></td>
+	<td><?php echo $key['alamat'];?></td>
+	<td><img class="img-mini" src="assets/foto/
+	<?php echo $key['logo'];?>"></td>
+	<td><a target="_blank" href="proses/sekolah/pdf.php?id=
+	<?php echo $key['id'];?>">PDF</a></td>
+	<td><a href="proses/sekolah/download.php?id=
+	<?php echo $key['id'];?>">Download</a></td>
+	<td><a href="index.php?p=sekolah&m=edit&id=
+	<?php echo $key['id'];?>">Ubah</a></td>
+	<td><a onclick="return confirm('Hapus Data <?php echo $key['nama'];?>')"
+	href="proses/sekolah/hapus.php?id=
+	<?php echo $key['id'];?>">Hapus</a></td>
 </tr>
 <?php
 $i++;

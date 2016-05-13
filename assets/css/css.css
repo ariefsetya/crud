@@ -86,13 +86,13 @@ border: 1px solid #bf3e11;
 table.data tr td{
 text-align: center;
 }
-input{
+input,select{
 font-size: 12pt;
 font-family: Candara;
 padding: 5px;
 width: 100%;
 border:1px solid #999;
 }
-input:hover{
-border:1px solid #bf3e11;
+input:hover,select:hover{
+	border:1px solid #bf3e11;
 }

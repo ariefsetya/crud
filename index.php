@@ -40,6 +40,24 @@ include 'conf.php';
 					break;
 					}
 				break;
+				//buat case jurusan baru
+				case 'jurusan':
+					switch (get('m')) {
+						case 'home':
+							inc('tampilan/jurusan/all');
+						break;
+						case 'add':
+							inc('tampilan/jurusan/add');
+						break;
+						case 'edit':
+							inc('tampilan/jurusan/edit');
+						break;
+						default:
+							inc('tampilan/jurusan/all');
+						break;
+					}
+				break;
+
 				default:
 					inc('home');
 				break;

@@ -17,5 +17,5 @@ $dompdf->loadHtml($html);
 $dompdf->setPaper('A4', 'landscape');
 $dompdf->render();
 $pdf = $dompdf->output();
-$dompdf->stream('laporan.pdf',array('Attachment' => 0));
+$dompdf->stream($data->nama.'.pdf',array('Attachment' => 0));
 ?>
