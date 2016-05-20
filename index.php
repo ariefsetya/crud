@@ -5,10 +5,14 @@ include 'conf.php';
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" 
+			content="width=device-width, initial-scale=1.0">
+			
 		<title>PDO CRUDSRUD</title>
 		<link rel="stylesheet" 
 			type="text/css" 
 			href="assets/css/css.css">
+
 	</head>
 	<body>
 		<div id="top-gray"></div>
@@ -56,6 +60,12 @@ include 'conf.php';
 							inc('tampilan/jurusan/all');
 						break;
 					}
+				break;
+				case 'addnews':
+					inc('tampilan/news/add');
+				break;
+				case 'next_':
+					inc('tampilan/news/next_');
 				break;
 
 				default:

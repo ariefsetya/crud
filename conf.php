@@ -1,4 +1,15 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['logged_in'])){
+	header("location:register.php");
+}else{
+	if(empty($_SESSION['logged_in']) or 
+		$_SESSION['logged_in']==false){
+		header("location:register.php");
+	}
+}
+
 require_once 'assets/dompdf-master/autoload.inc.php';
 date_default_timezone_set("Asia/Jakarta");
 

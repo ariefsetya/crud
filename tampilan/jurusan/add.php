@@ -22,7 +22,7 @@
 	</tr>
 	<tr>
 		<td>Nama Jurusan</td>
-		<td><input name="nama_jurusan" /></td>
+		<td><input name="nama_jurusan"></td>
 	</tr>
 	<tr>
 		<td>Kepala Jurusan</td>
